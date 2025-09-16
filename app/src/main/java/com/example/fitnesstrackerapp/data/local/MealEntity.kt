@@ -3,12 +3,13 @@ package com.example.fitnesstrackerapp.data.local.entities
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "user")
-data class UserEntity(
+@Entity(tableName = "meal")
+data class MealEntity(
     @PrimaryKey val id: String,
     val name: String,
-    val age: Int,
-    val heightCm: Int,
-    val weightKg: Int,
-    val activityLevel: String
+    val calories: Int,
+    val carbs: Int,
+    val protein: Int,
+    val fats: Int,
+    val date: String
 )
